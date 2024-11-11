@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input name="dt" type="number" placeholder="Distancia Percorrida">
+    <input name="cs" type="number" placeholder="Consumo">
+    <button onclick="media()">resultado</button>
+    <p class="resultado"> </p>
+
+
+    <script>
+        function media() { 
+
+
+            const distancia = parseFloat(document.querySelector('input[name="dt"]').value)
+            const consumo = parseFloat(document.querySelector('input[name="cs"]').value)
+
+            const soma = distancia / consumo
+
+            document.querySelector('.resultado').innerHTML = `Distancia de ${distancia} é o ${consumo}  é equivalente ${soma}`
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

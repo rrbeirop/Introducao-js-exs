@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt - br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input name= "1" type="number">
+    <input name= "2" type="number">
+    <button onclick="valores()">resultado</button>
+    <p class="resultado">
+        
+    </p>
+
+    <script>
+     function valores(){
+
+
+     const valor1 = parseInt(document.querySelector('input[name= "1"]').value)
+     const valor2 = parseInt(document.querySelector('input[name= "2"]').value)
+     
+    const soma = valor1 + valor2
+    
+    document.querySelector('.resultado').innerHTML = soma
+
+     }
+     </script>
+</body>
+</html>
